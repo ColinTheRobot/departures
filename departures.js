@@ -75,9 +75,9 @@ module.exports = [
     "Trip": 217,
     "Destination": "Haverhill",
     "ScheduledTime": 1468445700,
-    "Lateness": 0,
+    "Lateness": 15,
     "Track": "",
-    "Status": "On Time"
+    "Status": "Late"
   },
   {
     "TimeStamp": 1468443416,
@@ -85,9 +85,9 @@ module.exports = [
     "Trip": 333,
     "Destination": "Lowell",
     "ScheduledTime": 1468445700,
-    "Lateness": 0,
+    "Lateness": 15,
     "Track": "",
-    "Status": "On Time"
+    "Status": "Late"
   },
   {
     "TimeStamp": 1468443416,

@@ -1,31 +1,116 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: "Open Sans", Arial, serif;
+  font-weight: 800;
+  display: inline-block;
+  padding-left: 20px;
+  vertical-align: 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+img {
+  height: 50px;
+  display: inline-block;
+}
+
+nav {
+  display: inline-block;
+  vertical-align: 15px;
+}
+
+nav > ul > li {
+  cursor: pointer;
+}
+
+.inner-container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-left: 2%;
+  width: 100%;
+  padding: 26px 0px 22px;
+}
+
+.header-container {
+
+}
+
+.split-flap {
+  display: table;
+  margin: 0 auto;
+  border: 4px solid #28282A;
+  border-radius: 21px;
+  background: #28282A;
+}
+
+.departure-row:last-child {
+  border-bottom: none;
+}
+
 .nav {
   display: inline;
   padding: 10px;
+  font-family: "Open Sans", Arial, serif;
+  font-weight: 400;
 }
 
 .headers {
   font-weight: bold;
   padding: 8px 0px;
   border-bottom: 2px solid black;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex-grow: 0;
+  color: #F5F239;
 }
 
 .header-cells {
   padding: 15px;
   width: 130px;
+  font-family: "Open Sans", Arial, serif;
+  font-weight: 600;
 }
 
 .departure-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex-grow: 0;
+  border-bottom: 1px solid #9e9e9e;
+  color: whitesmoke;
+  font-family: "Open Sans", Arial, serif;
+  font-weight: 300;
+}
+
+.boarding {
+  color: #68CC30;
+}
+
+.late {
+  color: #cc3033;
 }
 
 .cell-style {
   padding: 5px 5px 5px 15px;
-  width: 150px;
+  width: 140px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Creates split flap effect*/
+.cell-style:before {
+  border-top: 1px solid rgba(0,0,0,0.4);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  position: relative;
+  top: 14px;
+  content: " ";
+  display: block;
 }
