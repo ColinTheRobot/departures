@@ -1,5 +1,6 @@
 html {
   font-family: 'Open Sans', sans-serif;
+  color: #1c1c1c;
 }
 
 h1 {
@@ -24,6 +25,10 @@ nav {
 
 nav > ul > li {
   cursor: pointer;
+
+}
+nav > ul > li:hover {
+  font-weight: 600
 }
 
 .inner-container {
