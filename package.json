@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "watchify -t [ babelify --presets [ react es2015 ] ] ./public/js/app.js -o ./public/bundle.js",
+    "postinstall": "./node_modules/browserify/bin/cmd.js -t [ babelify --presets [ react es2015 ] ] ./public/js/app.js -o ./public/bundle.js",
+    "bundle": "./node_modules/browserify/bin/cmd.js -t [ babelify --presets [ react es2015 ] ] ./public/js/app.js -o ./public/bundle.js",
     "start": "node server.js"
   },
   "author": "Colin",
