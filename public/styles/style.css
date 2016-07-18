@@ -70,11 +70,16 @@ nav > ul > li:hover {
   padding: 8px 0px;
   border-bottom: 2px solid black;
   width: 100%;
+  color: #F5F239;
+
   display: flex;
+  display: -webkit-flex;
+  display: -webkit-box;
   flex-direction: row;
   flex-wrap: wrap;
   flex-grow: 0;
-  color: #F5F239;
+  flex: 1 1 0;
+
 }
 
 .header-cells {
