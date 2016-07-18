@@ -31,4 +31,6 @@ String.prototype.toCamelCase = (str) => {
       .replace(/^(.)/, function ($1) { return $1.toLowerCase(); });
 };
 
-app.listen(3000);
+var port = process.env.PORT || 3000;
+
+var server = app.listen(port);
