@@ -71,16 +71,14 @@ nav > ul > li:hover {
   border-bottom: 2px solid black;
   width: 100%;
   color: #F5F239;
-
   display: flex;
-  display: -webkit-flex;
-  display: -webkit-box;
   flex-direction: row;
-  -webkit-flex-direction: row;
   flex-wrap: wrap;
+
+  /*display: -webkit-flex;
+  display: -webkit-box;
   -webkit-flex-wrap: wrap;
-  flex-grow: 0;
-  flex: 1 1 0;
+  -webkit-flex-direction: row;*/
 
 }
 
@@ -93,13 +91,14 @@ nav > ul > li:hover {
 
 .departure-row {
   display: flex;
-  display: -webkit-flex;
-  display: -webkit-box;
-
   flex-direction: row;
-  -webkit-flex-direction: row;
   flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
+
+  /*display: -webkit-flex;
+  display: -webkit-box;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;*/
+
   border-bottom: 1px solid #9e9e9e;
   color: whitesmoke;
   font-family: "Open Sans", Arial, serif;
