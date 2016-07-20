@@ -16,7 +16,7 @@ const DeparturesRow = React.createClass({
 
   render: function () {
     let departure = this.props.departure;
-    let parsedTime = moment(departure.ScheduledTime).format('h:mm:ss a');
+    let parsedTime = moment.unix(departure.ScheduledTime).format('h:mm:ss a');
     let status = this.setStatusClass(departure);
     let humanizedLateness = moment.duration(departure.Lateness, 'minutes').humanize();
 
